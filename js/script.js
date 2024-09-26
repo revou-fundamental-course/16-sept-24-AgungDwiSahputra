@@ -113,7 +113,7 @@ function simpanDataVisitor() {
         // Terapkan inputan ke content pada class tar_nama_visitor berisi nama visitor
         visitorName.textContent = `Hai ${namaVisitor}, Welcome to my Website`;
         effectKetik();
-    } else if (namaVisitor.length > 3) {
+    } else if (namaVisitor.length < 3) {
         document.getElementsByClassName('pesan_kesalahan')[0].textContent = 'Nama harus lebih dari 3 huruf';
     } else if (namaVisitor == '' || namaVisitor == null) {
         document.getElementsByClassName('pesan_kesalahan')[0].textContent = 'Mohon isi nama';

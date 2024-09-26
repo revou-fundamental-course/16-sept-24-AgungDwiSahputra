@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agung Dwi Sahputra | Mini Coding Project RevoU</title>
+
+  <link rel="shortcut icon" href="assets/img/my_profile.jpg" type="image/x-icon">
+  <!-- Custom my Style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="navigasi">
+    <div class="w-full d-flex align-items-center justify-content-between py-2">
+      <!-- Logo -->
+      <img class="circle" src="assets/img/my_profile.jpg" width="50" height="50" alt="Image Navbar" />
+
+      <div class="list-navigasi humberger">
+        <ul class="d-flex gap-5">
+          <li class="border-1">
+            <a class="text-white" href="javascript:void(0);" data-target="#menu"
+              onclick="humbergerEffect()">Menu</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- List Navigasi -->
+      <div class="list-navigasi menu-desktop">
+        <ul class="d-flex gap-5">
+          <li class="border-1">
+            <a class="text-white nav-link active" href="#hero">Home</a>
+          </li>
+          <li class="border-1">
+            <a class="text-white nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="border-1">
+            <a class="text-white nav-link" href="#visi_misi">Visi & Misi</a>
+          </li>
+          <li class="border-1">
+            <a class="text-white nav-link" href="#headquarter">Headquarter</a>
+          </li>
+          <li class="border-1">
+            <a class="text-white nav-link" href="#message-us">Message Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Menu Mobile -->
+    <div class="list-navigasi menu-mobile" id="menu">
+      <ul class="d-flex align-items-start justify-content-center flex-column p-0">
+        <li class="border-1 py-2">
+          <a class="text-white nav-link active" href="#hero">Home</a>
+        </li>
+        <li class="border-1 py-2">
+          <a class="text-white nav-link" href="#profile">Profile</a>
+        </li>
+        <li class="border-1 py-2">
+          <a class="text-white nav-link" href="#visi_misi">Visi & Misi</a>
+        </li>
+        <li class="border-1 py-2">
+          <a class="text-white nav-link" href="#headquarter">Headquarter</a>
+        </li>
+        <li class="border-1 py-2">
+          <a class="text-white nav-link" href="#message-us">Message Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Popup Floating  -->
+  <div class="overlay"></div>
+  <div class="popup-pertanyaan bg-white rounded">
+    <label for="nama_visitor" class="d-block">Masukan Nama kamu untuk akses website ini :</label>
+    <div class="d-flex align-items-center justify-content-start">
+      <input class="form-control" type="text" id="nama_visitor" name="nama_visitor" placeholder="Masukan Nama" />
+      <button class="btn" onclick="simpanDataVisitor()">
+        Kirim
+      </button>
+    </div>
+    <span class="pesan_kesalahan"></span>
+  </div>
+  <!-- End Popup Floating  -->
+
+  <section id="hero">
+    <div class="d-flex align-items-center justify-content-center gap-6 flex-column h-full">
+      <div class="text-center mb-5">
+        <h1 class="title m-0 text-white">
+          <span class="tar_nama_visitor"></span>
+        </h1>
+        <span class="sub-title text-white">Ini adalah Website latihan pertama</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile">
+    <div class="d-flex align-items-center justify-content-around flex-column pt-5 pb-5">
+      <div class="box">
+        <h2 class="m-0 mb-5 text-center">Profile</h2>
+        <img class="d-block circle mx-auto" width="200" height="200" src="assets/img/my_profile.jpg" alt="company">
+        <div>
+          <h3>Deskripsi</h3>
+          <p>Saya seorang pengembang web dengan pengalaman 3 tahun dalam pengembangan situs web. Saya memiliki kemampuan
+            menggunakan beberapa bahasa pemrograman untuk membuat website responsif dan dinamis. Saya juga memiliki
+            keahlian
+            dalam menggunakan framework seperti Bootstrap, Tailwind, jQuery, dan Laravel. Saya mampu bekerja dengan
+            mengikuti
+            tahapan pengembangan website secara terstruktur dan saya sudah memahami prinsip-prinsip SEO dan cara
+            meningkatkan
+            peringkat website di mesin pencari. Saya memiliki kemampuan lain yaitu membuat desain yang unik dan menarik
+            untuk
+            berbagai jenis proyek desain grafis dan telah berhasil menyelesaikan banyak proyek desain grafis selama 2
+            tahun
+            pengalaman saya. Saya dapat bekerja dengan baik dalam tim maupun mandiri dan selalu berusaha menyelesaikan
+            proyek
+            dalam waktu yang ditentukan dengan kualitas yang baik. Saya juga selalu tertarik mempelajari teknologi baru
+            dan
+            meningkatkan keterampilan saya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visi_misi">
+    <div class="d-flex align-items-start justify-content-around gap-6 pt-5">
+      <div class="box">
+        <img class="rounded" width="400" src="assets/img/company.jpg" alt="Company">
+      </div>
+      <div>
+        <h2 class="mb-5">Visi dan Misi</h2>
+        <div class="visi">
+          <h3>Visi</h3>
+          <p>Menjadi pelopor teknologi inovatif yang mendorong transformasi digital global, menciptakan solusi cerdas
+            dan
+            berdampak untuk masa depan yang lebih baik.</p>
+        </div>
+        <div class="misi">
+          <h3>Misi</h3>
+          <ol type="1">
+            <li>Mengembangkan produk dan layanan teknologi yang inovatif dan berkelanjutan, meningkatkan kualitas hidup
+              masyarakat.</li>
+            <li>Memberikan solusi digital yang dapat diakses oleh semua kalangan, dengan fokus pada kemudahan dan
+              keamanan
+              pengguna.</li>
+            <li>Membangun budaya perusahaan yang mendukung kreativitas, kolaborasi, dan pertumbuhan profesional untuk
+              menciptakan inovasi tanpa batas.</li>
+            <li>Berkomitmen pada keberlanjutan lingkungan dengan menciptakan teknologi ramah lingkungan yang berdampak
+              positif bagi generasi mendatang.</li>
+            <li>Meningkatkan kepuasan pelanggan melalui layanan prima dan terus menerus memperbaiki kualitas produk
+              sesuai
+              dengan kebutuhan pasar yang dinamis.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="headquarter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#00d1dc" fill-opacity="1"
+        d="M0,160L26.7,165.3C53.3,171,107,181,160,192C213.3,203,267,213,320,229.3C373.3,245,427,267,480,240C533.3,213,587,139,640,128C693.3,117,747,171,800,165.3C853.3,160,907,96,960,96C1013.3,96,1067,160,1120,202.7C1173.3,245,1227,267,1280,240C1333.3,213,1387,139,1413,101.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+      </path>
+    </svg>
+    <div class="d-flex align-items-center justify-content-center flex-column pt-5">
+      <h2 class="m-0 ms-2 me-2 mt-5">Our Headquarter</h2>
+      <span class="d-block ms-2 me-2 mb-5 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+        vero?</span>
+      <div class="d-flex align-items-center justify-content-between gap-6 mb-5">
+        <div class="box-card">
+          <img class="img-responsive rounded" src="assets/img/headquarter/jakarta.jpg" width="250" height="450"
+            alt="Image headquarter Jakarta" />
+          <div class="box-card__copywriting">Jakarta</div>
+        </div>
+        <div class="box-card">
+          <img class="img-responsive rounded" src="assets/img/headquarter/bandung.jpg" width="250" height="450"
+            alt="Image headquarter Bandung" />
+          <div class="box-card__copywriting">Bandung</div>
+        </div>
+        <div class="box-card">
+          <img class="img-responsive rounded" src="assets/img/headquarter/surabaya.jpg" width="250" height="450"
+            alt="Image headquarter Surabaya" />
+          <div class="box-card__copywriting">Surabaya</div>
+        </div>
+      </div>
+      <svg class="pt-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FFFFFF" fill-opacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,74.7C672,64,768,64,864,96C960,128,1056,192,1152,181.3C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="message-us">
+    <h2 class="text-center m-0">Message Us</h2>
+    <div class="d-flex align-items-start justify-content-around gap-6 pt-5">
+      <!-- Sisi Kiri(Form) -->
+      <form class="w-full" id="form-message" action="" method="get">
+        <table>
+          <tr>
+            <td style="width: 150px;">Nama</td>
+            <td style="width:20px">:</td>
+            <td>
+              <input id="nama" class="form-control" type="text" name="nama" placeholder="Nama" />
+            </td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td>
+              <input id="tanggal_lahir" class="form-control" type="date" name="tanggal_lahir"
+                placeholder="Tanggal Lahir" />
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <div class="form-radio">
+                <label class="custom-radio">Laki-Laki
+                  <input id="jk_laki" type="radio" name="jenis_kelamin" value="laki-laki" checked>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-radio">
+                <label class="custom-radio">Perempuan
+                  <input id="jk_perempuan" type="radio" name="jenis_kelamin" value="perempuan">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td>
+              <textarea id="pesan" class="custom-textarea" name="pesan" cols="30" rows="10"
+                placeholder="Pesan"></textarea>
+            </td>
+          </tr>
+        </table>
+        <button type="button" class="d-block btn btn-maba ms-auto" onclick="validateForm()">Submit</button>
+      </form>
+
+      <!-- Sisi Kanan (Result) -->
+      <div class="w-full d-flex align-items-center justify-content-start border-1 rounded">
+        <!-- Isi by JS -->
+        <div class="result-form">
+          <div id="result-form"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="d-flex align-items-center justify-content-end">
+      <span>Agung Dwi Sahputra &copy; 2024</span>
+    </div>
+  </footer>
+
+  <!-- Custom my Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
